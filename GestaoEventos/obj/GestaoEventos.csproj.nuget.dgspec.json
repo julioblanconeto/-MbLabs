@@ -4,14 +4,14 @@
     "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\GestaoEventos.csproj": {}
   },
   "projects": {
-    "D:\\Mblabs\\GestaoEventos\\DataAcess\\DataAcess.csproj": {
+    "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mblabs\\GestaoEventos\\DataAcess\\DataAcess.csproj",
+        "projectUniqueName": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj",
         "projectName": "DataAcess",
-        "projectPath": "D:\\Mblabs\\GestaoEventos\\DataAcess\\DataAcess.csproj",
+        "projectPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj",
         "packagesPath": "C:\\Users\\Julio PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Mblabs\\GestaoEventos\\DataAcess\\obj\\",
+        "outputPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,26 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,14 +84,14 @@
         }
       }
     },
-    "D:\\Mblabs\\GestaoEventos\\DataLogic\\DataLogic.csproj": {
+    "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataLogic\\DataLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mblabs\\GestaoEventos\\DataLogic\\DataLogic.csproj",
+        "projectUniqueName": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataLogic\\DataLogic.csproj",
         "projectName": "DataLogic",
-        "projectPath": "D:\\Mblabs\\GestaoEventos\\DataLogic\\DataLogic.csproj",
+        "projectPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataLogic\\DataLogic.csproj",
         "packagesPath": "C:\\Users\\Julio PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Mblabs\\GestaoEventos\\DataLogic\\obj\\",
+        "outputPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Mblabs\\GestaoEventos\\DataAcess\\DataAcess.csproj": {
-                "projectPath": "D:\\Mblabs\\GestaoEventos\\DataAcess\\DataAcess.csproj"
+              "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj": {
+                "projectPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj"
               }
             }
           }
@@ -157,8 +177,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Mblabs\\GestaoEventos\\DataLogic\\DataLogic.csproj": {
-                "projectPath": "D:\\Mblabs\\GestaoEventos\\DataLogic\\DataLogic.csproj"
+              "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj": {
+                "projectPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataAcess\\DataAcess.csproj"
+              },
+              "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataLogic\\DataLogic.csproj": {
+                "projectPath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\DataLogic\\DataLogic.csproj"
               }
             }
           }
@@ -176,6 +199,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.17.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

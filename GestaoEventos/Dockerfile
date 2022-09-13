@@ -10,10 +10,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["GestaoEventos/GestaoEventos.csproj", "GestaoEventos/"]
-RUN dotnet restore "GestaoEventos/GestaoEventos.csproj"
+COPY ["GestaoEventos.csproj", "."]
+RUN dotnet restore "./GestaoEventos.csproj"
 COPY . .
-WORKDIR "/src/GestaoEventos"
+WORKDIR "/src/."
 RUN dotnet build "GestaoEventos.csproj" -c Release -o /app/build
 
 FROM build AS publish
