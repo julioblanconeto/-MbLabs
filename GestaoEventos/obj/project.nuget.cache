@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rEw/8QuunFQ6DK3W2MuSz2ZuV618QK6mw7yjBsv0VxazgLxe1eRoQkuLU4TjAQHeeJFnecB08uHyWrIEgYwptA==",
+  "success": true,
+  "projectFilePath": "D:\\Mblabs\\GestaoEventos\\GestaoEventos\\GestaoEventos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Julio PC\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
