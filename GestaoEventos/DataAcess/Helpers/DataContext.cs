@@ -39,8 +39,8 @@ namespace DataAcess.Helpers
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Events>(builder => builder.HasKey(x => x.EventsId));
+            modelBuilder.Entity<Tickets>(builder => builder.HasKey(x =>x.TicketsId));
             modelBuilder.Entity<Users>(builder => builder.HasNoKey());
-            modelBuilder.Entity<Tickets>(builder => builder.HasNoKey());
             modelBuilder.Entity<Profiles>(builder => builder.HasNoKey());
 
         }

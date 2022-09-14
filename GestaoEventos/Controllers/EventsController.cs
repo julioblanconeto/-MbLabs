@@ -23,16 +23,20 @@ namespace GestaoEventos.Controllers
         //}
 
         [HttpGet(Name = "Events")]
-        public IResult EventsFilter(int? filter)
+        public async Task<List<EventsDto>> EventsFilter(int? filter)
         {
-            return Results.Json(eventsServices.GetEvents(filter));
+            return  await eventsServices.GetEvents(filter);
         }
 
         [HttpPost(Name = "NewEvent")]
         public  async Task<IResult> PostNewEevent([FromBody] NewEventDto newEvent)
         {
+
+
             return Results.StatusCode( await eventsServices.NewEvent(newEvent));
         }
 
+
+        
     }
 }

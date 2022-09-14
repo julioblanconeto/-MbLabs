@@ -27,6 +27,9 @@ namespace DataAcess.Maps
             builder.Property(mb => mb.UserId)
                 .HasColumnName("UserId")
                 ;
+            builder.Property(mb => mb.QtdTicket)
+             .HasColumnName("QtdTicket")
+             ;
             builder.Property(mb => mb.PurchasedDate)
                 .HasColumnName("PurchasedDate")
                 .HasColumnType("dateTimeOffSet")
