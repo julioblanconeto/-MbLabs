@@ -12,7 +12,6 @@ namespace DataAcess.Dtos
         public string InstitutionName { get; set; }
         public string? Description { get; set; }
         public int QtdTicket { get; set; }
-        //public int ProfileId { get; set; }
         public string Profile { get; set; }
     }
 }

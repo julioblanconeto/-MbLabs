@@ -34,7 +34,6 @@ namespace DataAcess.Helpers
 
                 throw ex;
             }
-            //connect to sql server with connection string from app settings
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

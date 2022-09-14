@@ -8,9 +8,7 @@ namespace DataAcess.Models
 
         public string Name { get; set; }
         public string Password { get; set; }
-        //public int ProfileId { get; set; }
         public int ProfileId { get; set; }
-
         public ICollection<Tickets> tickets { get; set; }
     }
 }

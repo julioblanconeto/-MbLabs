@@ -42,13 +42,6 @@ namespace DataAcess.Maps
             .HasColumnName("ProfileId")
             ;
 
-           
-
-            //builder.HasMany(c => c.tickets)
-            //    .WithOne(e => e.events)
-            //    .HasForeignKey(f=>f.TicketsId)
-            //    ;
-
         }
     }
 }

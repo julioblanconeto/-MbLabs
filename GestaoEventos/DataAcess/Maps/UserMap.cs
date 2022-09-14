@@ -39,11 +39,6 @@ namespace DataAcess.Maps
                 .IsRequired()
                 ;
 
-
-
-            //builder.HasMany(c => c.tickets)
-            //    .WithOne(e => e.UserId)
-            //    ;
         }
     }
 }

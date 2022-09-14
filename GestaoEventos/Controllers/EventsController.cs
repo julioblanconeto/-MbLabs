@@ -16,12 +16,6 @@ namespace GestaoEventos.Controllers
             eventsServices = new EventsServives(context);
         }
 
-        //[HttpGet(Name = "Events")]
-        //public async Task<List<EventsDto>> Get()
-        //{
-        //    return await eventsServices.GetAllEvents();
-        //}
-
         [HttpGet(Name = "Events")]
         public async Task<List<EventsDto>> EventsFilter(int? filter)
         {

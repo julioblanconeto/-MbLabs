@@ -26,11 +26,6 @@ namespace DataAcess.Maps
                 .IsRequired()
                 ;
 
-
-            //builder.HasMany(c => c.Events)
-            //   .WithOne(e => e.ProfileId)
-            //   .HasForeignKey(f => f.EventsId)
-            //   ;
         }
     }
 }

@@ -8,10 +8,7 @@ namespace DataAcess.Models
         public string InstitutionName { get; set; }
         public string? Description { get; set; }
         public int QtdTicket { get; set; }
-        //public int ProfileId { get; set; }
         public int ProfileId { get; set; }
-        //public int tickets { get; set; }
-
 
     }
 }
