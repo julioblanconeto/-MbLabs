@@ -42,13 +42,12 @@ namespace DataAcess.Maps
             .HasColumnName("ProfileId")
             ;
 
-            builder.HasOne(c => c.ProfileId)
-                .WithMany(e => e.Events)
-                ;
+           
 
-            builder.HasMany(c => c.tickets)
-                .WithOne(e => e.events)
-                ;
+            //builder.HasMany(c => c.tickets)
+            //    .WithOne(e => e.events)
+            //    .HasForeignKey(f=>f.TicketsId)
+            //    ;
 
         }
     }

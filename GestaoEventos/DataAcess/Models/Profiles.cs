@@ -5,6 +5,6 @@ namespace DataAcess.Models
     {
         public int ProfileId { get; set; }
         public string Name { get; set; }
-        public ICollection<Events> Events { get; set; }
+        //public ICollection<Events> Events { get; set; }
     }
 }

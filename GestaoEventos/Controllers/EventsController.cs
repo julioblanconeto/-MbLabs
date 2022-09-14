@@ -1,4 +1,5 @@
-﻿using DataAcess.Models;
+﻿using DataAcess.Dtos;
+using DataAcess.Helpers;
 using DataLogic.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,15 +11,28 @@ namespace GestaoEventos.Controllers
     {
         private EventsServives eventsServices;
 
-        public EventsController()
+        public EventsController(DataContext context)
         {
-            eventsServices = new EventsServives();
+            eventsServices = new EventsServives(context);
         }
 
-        [HttpGet(Name = "GetEvents")]
-        public async Task<Events> Get()
+        //[HttpGet(Name = "Events")]
+        //public async Task<List<EventsDto>> Get()
+        //{
+        //    return await eventsServices.GetAllEvents();
+        //}
+
+        [HttpGet(Name = "Events")]
+        public IResult EventsFilter(int? filter)
         {
-            return await eventsServices.GetAllEvents();
+            return Results.Json(eventsServices.GetEvents(filter));
         }
+
+        [HttpPost(Name = "NewEvent")]
+        public  async Task<IResult> PostNewEevent([FromBody] NewEventDto newEvent)
+        {
+            return Results.StatusCode( await eventsServices.NewEvent(newEvent));
+        }
+
     }
 }

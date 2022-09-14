@@ -32,13 +32,14 @@ namespace DataAcess.Maps
 
             builder.Property(mb => mb.ProfileId)
                 .HasColumnName("ProfileId")
+                .IsRequired()
                 ;
 
 
 
-            builder.HasMany(c => c.tickets)
-                .WithOne(e => e.UserId)
-                ;
+            //builder.HasMany(c => c.tickets)
+            //    .WithOne(e => e.UserId)
+            //    ;
         }
     }
 }

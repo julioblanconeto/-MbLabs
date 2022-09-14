@@ -8,9 +8,9 @@ namespace DataAcess.Models
         //public int EventsId { get; set; }
         //public int UserId { get; set; }
 
-        public virtual Events EventsId { get; set; }
-        public virtual Users UserId { get; set; }
+        public  int EventsId { get; set; }
+        public  int UserId { get; set; }
 
-        public virtual Events events { get; set; }
+        public  int events { get; set; }
     }
 }

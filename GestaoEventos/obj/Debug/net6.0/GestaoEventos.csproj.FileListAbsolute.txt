@@ -70,3 +70,9 @@ D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\DataAcess.dll
 D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\DataLogic.dll
 D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\DataAcess.pdb
 D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\DataLogic.pdb
+D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\Humanizer.dll
+D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\System.Web.Http.dll
+D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Mblabs\GestaoEventos\GestaoEventos\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
