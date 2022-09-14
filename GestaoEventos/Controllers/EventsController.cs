@@ -31,8 +31,6 @@ namespace GestaoEventos.Controllers
         [HttpPost(Name = "NewEvent")]
         public  async Task<IResult> PostNewEevent([FromBody] NewEventDto newEvent)
         {
-
-
             return Results.StatusCode( await eventsServices.NewEvent(newEvent));
         }
 

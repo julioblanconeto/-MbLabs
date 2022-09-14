@@ -24,6 +24,10 @@ namespace DataAcess.Maps
                 .HasColumnName("Name")
                 .IsRequired()
                 ;
+            builder.Property(mb => mb.Email)
+                .HasColumnName("Email")
+                .IsRequired()
+                ;
 
             builder.Property(mb => mb.Password)
                .HasColumnName("Password")
