@@ -84,7 +84,14 @@ namespace DataLogic.Services
             eventdto.Profile = _dtContext.Profiles.Where(x => x.ProfileId == _event.ProfileId).Select(x => x.Name).First();
             eventdto.QtdTicket = _event.QtdTicket;
             eventdto.InstitutionName = _event.InstitutionName;
-            eventdto.Description = _event.Description;
+            if (_event.QtdTicket > 0)
+            {
+                eventdto.Description = _event.Description;
+            }
+            else
+            {
+                eventdto.Description = $"(INGESSOS INDISPONIVÉIS) {_event.Description}";
+            }
             eventdto.EventName = _event.Name;
 
             return eventdto;
